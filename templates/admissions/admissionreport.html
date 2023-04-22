@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            admission report page
+        </title>
+        <body>
+            <h1>ADMISSIONS REPORT</h1>
+            <table border="1">
+                <tr>
+                <th>student Name</th>
+                <th>Father Name</th>
+                <th>Class</th>
+                <th>Contact</th>
+                </tr>
+
+                {% for s in allstudents %}
+                <tr>
+                <td>{{s.name}}</td>
+                <td>{{s.fathername}}</td>
+                <td>{{s.classnames}}</td>
+                <td>{{s.contact}}</td>
+                {% endfor %}
+                </tr>
+            </table>
+            
+            <h3>
+                Please submit below form
+            </h3>
+        </body>
+</html>

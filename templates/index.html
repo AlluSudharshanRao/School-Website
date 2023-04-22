@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+           homepage
+        </title>
+        <link rel="stylesheet" href="{%static "stylesheets/style.css" %}"/>
+        <body>
+            <h2><img src="{% static "Image/BHS.jpg" %}" width="200" height="200"  alt="Image not  found" />
+                Bhashyam High School</h2>
+            <br>
+            <hr>
+            <br>
+            <br><br><br>
+
+
+           <div class="module">
+           <h1>ADMISSIONS</h1><br>
+           <a href="./ad/newadm"><button type="button" name="button">Add Admission</button></a><br><br>
+           <a href="./ad/admreport"><button type="button" name="button">Admission Report</button></a><br><br>
+           </div>
+
+
+           <div class="module">
+           <h1>ACCOUNTS</h1><br>
+           <a href="./acc/feecoll"><button type="button" name="button">Fee Collection</button></a><br><br>
+           <a href="./acc/collectionreport"><button type="button" name="button">Fee Collection Report</button></a><br><br>
+           <a href="./acc/duesreport"><button type="button" name="button">Fee Dues Report</button></a><br><br>
+           </div>
+        </body>
+</html>
